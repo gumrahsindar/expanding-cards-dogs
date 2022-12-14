@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 90vh;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+
+}
+
+.container img {
+    width: 60px;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 50px;
+    position: relative;
+    margin: 20px;
+    cursor: pointer;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 220px;
+    color: #fff;
+    visibility: hidden;
+}
+
+figcaption.active {
+    visibility: visible;
+}
+
+.container img[class="active"] {
+    width: 100%;
+}
