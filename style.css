@@ -23,8 +23,8 @@ body {
 figure {
     display: flex;
     align-items: center;
-    justify-content: center;
     height: 80vh;
+
 
 }
 
@@ -32,6 +32,8 @@ figure {
     width: 60px;
     height: 60vh;
     object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 50px;
     position: relative;
     margin: 20px;
@@ -50,5 +52,10 @@ figcaption.active {
 }
 
 .container img[class="active"] {
+
     width: 100%;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: .3s;
 }
